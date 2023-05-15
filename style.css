@@ -1,0 +1,141 @@
+body {
+  background-image: url("https://wallpaperaccess.com/full/228514.jpg");
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background: position 0;
+
+}
+
+
+
+#box {
+  width: 250px;
+  height: 30px;
+  border: 2px solid yellow;
+  background-image: radial-gradient(yellow, orange, yellow, orange, yellow, orange, yellow, orange, orange, orange, orange, yellow, yellow);
+  border-radius: 100%;
+  margin-top: 20%;
+  color: white;
+  box-shadow: 15px;
+
+}
+
+#innerbox {
+  width: 45px;
+  height: 10px;
+  border: 1px solid rgb(219, 92, 29);
+  background-image: radial-gradient(rgb(207, 106, 24), brown, orange, rgb(91, 64, 64), yellow);
+  border-radius: 100%;
+  margin: 5px 1px 1px 1px;
+
+}
+
+
+
+#box {
+  animation-name: sudarshan;
+  animation-delay: 1s;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
+  animation-delay: .001s;
+  animation-duration: 0.21sec;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-timeline: inherit;
+
+}
+
+#box:hover {
+  padding: 20px;
+  transition-duration: 3s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+
+}
+
+
+@media only screen and (max-width:600px) {
+  ::before {
+    content: "PLEASE GO TO THE DESKTOP SITE OR LARGE SCREEN FOR THE GOOD USER EXPERIENCE";
+  }
+
+  body {
+    display: none;
+    content: "Please go for desktop site";
+  }
+}
+
+@media only screen and(min-width:700px) {
+  body {
+    display: contents;
+  }
+}
+
+
+@keyframes sudarshan {
+
+  0% {
+    transform: translateX(0px);
+
+  }
+
+  10% {
+    transform: translateX(300px);
+  }
+
+  20% {
+    transform: translateX(-100px);
+    transform: skew(-25px);
+
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    margin: 20px 800px 100px 10px;
+    transition-duration: 3s;
+
+  }
+
+
+  50% {
+    margin: 20px 10px 100px 800px;
+    transition-duration: 3s;
+
+  }
+
+  60% {
+    transform: rotateZ(20deg);
+  }
+
+  70% {
+    margin: 400px 700px 20px 10px;
+    transition-duration: 3s;
+
+  }
+
+  80% {
+    margin: 400px 20px 20px 700px;
+    transition-duration: 3s;
+  }
+
+  90% {
+    margin-left: 100px;
+  }
+
+  92% {
+    margin-right: 100px;
+  }
+
+  100% {
+    transform: translateX(100px);
+
+  }
+
+
+}
